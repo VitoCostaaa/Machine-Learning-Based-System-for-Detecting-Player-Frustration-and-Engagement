@@ -10,6 +10,8 @@ In addition to the training process, the system includes a real-time analysis co
 
 Overall, this thesis demonstrates that machine learning-based systems represent a promising approach for the detection and analysis of player behavior.
 
+---
+
 ## Methodology
 
 ### Data Collection
@@ -28,6 +30,8 @@ The player manually labels each round after completion, providing ground truth f
 
 For data acquisition, 8 test players participated in the experiment. Each participant completed approximately 40 game rounds, resulting in a balanced dataset of 320 recorded entries. This dataset forms the basis for model training and evaluation.
 
+---
+
 ### Model Training
 
 The collected dataset is used to train a machine learning model based on the Random Forest algorithm. The dataset is split into training and test sets to evaluate performance.
@@ -38,6 +42,8 @@ Key aspects:
 * Feature-based classification
 * Model persistence using serialization
 
+---
+
 ### Real-Time Prediction
 
 A trained model is used to perform real-time predictions of player states during gameplay. The system outputs both:
@@ -45,12 +51,16 @@ A trained model is used to perform real-time predictions of player states during
 * Predicted class label
 * Confidence score
 
+---
+
 ### Data Visualization
 
 Statistical plots are generated to analyze relationships between behavioral features and player states. These include:
 
 * Boxplots (e.g., panic rate comparison)
 * Scatterplots (e.g., performance vs. interaction patterns)
+
+---
 
 ## Project Structure
 
@@ -79,6 +89,8 @@ Project-Folder/
 │   └── visualise_results.py         # Data visualization
 ```
 
+---
+
 ## Installation
 
 Install required dependencies:
@@ -86,6 +98,9 @@ Install required dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+---
+
 
 ## Usage
 
@@ -113,6 +128,8 @@ python analyse_realtime.py
 python visualise_results.py
 ```
 
+---
+
 ## Requirements
 
 * Python 3.11.9
@@ -124,11 +141,15 @@ python visualise_results.py
 * matplotlib
 * seaborn
 
+---
+
 ## Notes
 
 The project uses a controlled experimental environment to ensure reproducibility and consistency of collected data.
 
 Generated data, models and plots are excluded from version control.
+
+---
 
 ## Author
 
